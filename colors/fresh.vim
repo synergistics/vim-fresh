@@ -16,7 +16,7 @@ set t_Co=256
 let g:colors_name = "fresh"
 
 " Palette
-let s:bg = {'gui': '#0b0b13', 'cterm': 232}
+let s:bg = {'gui': '#0b0b13', 'cterm': 132}
 let s:fg = {'gui': '#71818f', 'cterm': 241}
 let s:light_gray = {'gui': '#e3e3e3', 'cterm': 253}
 let s:gray = {'gui': '#44474f', 'cterm': 241}
