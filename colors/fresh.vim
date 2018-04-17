@@ -16,7 +16,7 @@ set t_Co=256
 let g:colors_name = "fresh"
 
 " Palette
-let s:bg = {'gui': '#0b0b13', 'cterm': 132}
+let s:bg = {'gui': '#0b0b13', 'cterm': 232}
 let s:fg = {'gui': '#71818f', 'cterm': 241}
 let s:light_gray = {'gui': '#e3e3e3', 'cterm': 253}
 let s:gray = {'gui': '#44474f', 'cterm': 241}
@@ -42,7 +42,7 @@ exec "hi Conditional guifg=". s:fuchsia.gui ." guibg=NONE gui=NONE ctermfg=". s:
 exec "hi ColorColumn guifg=NONE guibg=". s:dark_gray.gui ." gui=NONE ctermfg=NONE ctermbg=". s:dark_gray.cterm
 exec "hi Constant guifg=". s:cyan.gui ." guibg=NONE gui=NONE ctermfg=". s:cyan.cterm
 exec "hi cursorim guifg=". s:bg.gui ." guibg=". s:blue.gui ." gui=NONE ctermfg=" s:bg.cterm " ctermbg=". s:blue.cterm
-exec "hi CursorLine guifg=NONE guibg=". s:dark_gray.gui ." gui=NONE ctermfg=NONE ctermbg=". s:dark_gray.cterm
+exec "hi CursorLine guifg=NONE" "guibg=#1f1f1d". " gui=NONE cterm=NONE ctermfg=NONE ctermbg=". s:dark_gray.cterm
 exec "hi CursorLineNr guifg=". s:cyan.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:cyan.cterm ." ctermbg=". s:dark_gray.cterm
 exec "hi CursorColumn guifg=NONE guibg=". s:dark_gray.gui ." gui=NONE ctermfg=NONE ctermbg=". s:dark_gray.cterm
 exec "hi Cursor guifg=NONE guibg=". s:dark_gray.gui ." gui=NONE ctermfg=NONE ctermbg=241"
@@ -87,7 +87,7 @@ exec "hi SpecialChar guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=208"
 exec "hi SpecialComment guifg=". s:orange.gui ." guibg=NONE gui=NONE ctermfg=208"
 exec "hi SpecialKey guifg=". s:red.gui ." guibg=". s:dark_blue.gui ." gui=NONE ctermfg=". s:red.cterm ." ctermbg=". s:dark_blue.cterm
 exec "hi Statement guifg=". s:light_blue.gui ." guibg=NONE gui=NONE ctermfg=". s:light_blue.cterm
-exec "hi StatusLine guifg=". s:fg.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:bg.cterm ." ctermbg=". s:dark_gray.cterm
+exec "hi StatusLine guifg=". s:bg.gui ." guibg=". s:fg.gui ." gui=NONE ctermfg=". s:fg.cterm ." ctermbg=". s:dark_gray.cterm
 exec "hi StatusLineNC guifg=". s:gray.gui ." guibg=". s:dark_gray.gui ." gui=NONE ctermfg=". s:gray.cterm ." ctermbg=". s:dark_gray.cterm
 exec "hi StorageClass guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.cterm
 exec "hi String guifg=". s:blue.gui ." guibg=NONE gui=NONE ctermfg=". s:blue.cterm
